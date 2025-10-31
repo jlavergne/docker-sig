@@ -20,11 +20,11 @@ Elle permet d’exécuter des applications dans des **conteneurs* isolés, porta
 
 - **Volume** : espace de stockage persistant pour les données, indépendant du cycle de vie des conteneurs.
 
-&nbsp; Types de volumes :
+Types de volumes :
 
-&nbsp; - **Volumes Docker** : gérés par Docker, faciles à partager entre conteneurs.  
+**Volumes Docker** : gérés par Docker, faciles à partager entre conteneurs.  
 
-&nbsp; - **Bind mounts** : utilisent un dossier du système hôte, pratique pour le développement.
+**Bind mounts** : utilisent un dossier du système hôte, pratique pour le développement.
 
 
 
