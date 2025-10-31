@@ -4,7 +4,7 @@
 
 **Docker** est une plateforme de virtualisation légère basée sur la **containerisation**.  
 
-Elle permet d’exécuter des applications dans des **conteneurs* isolés**, portables et reproductibles.
+Elle permet d’exécuter des applications dans des **conteneurs isolés**, portables et reproductibles.
 
 
 
