@@ -1,42 +1,42 @@
-\## 🐳 Docker — Description technique
+## 🐳 Docker — Description technique
 
 
 
-\*\*Docker\*\* est une plateforme de virtualisation légère basée sur la \*\*containerisation\*\*.  
+**Docker** est une plateforme de virtualisation légère basée sur la **containerisation**.  
 
-Elle permet d’exécuter des applications dans des \*\*conteneurs\*\* isolés, portables et reproductibles.
+Elle permet d’exécuter des applications dans des **conteneurs* isolés, portables et reproductibles.
 
 
 
-\### ⚙️ Principes clés
+### ⚙️ Principes clés
 
-\- \*\*Conteneur\*\* : unité d’exécution isolée via les \*\*namespaces\*\* et \*\*cgroups\*\* du noyau Linux.  
+- **Conteneur** : unité d’exécution isolée via les **namespaces** et **cgroups** du noyau Linux.  
 
-\- \*\*Image\*\* : modèle immuable construit à partir d’un \*\*Dockerfile\*\*.  
+- **Image** : modèle immuable construit à partir d’un **Dockerfile**.  
 
-\- \*\*Docker Engine\*\* : moteur client-serveur (CLI, API, démon `dockerd`).  
+- **Docker Engine** : moteur client-serveur (CLI, API, démon `dockerd`).  
 
-\- \*\*Registry\*\* : stockage et distribution d’images (ex. \*Docker Hub\*).
+- **Registry** : stockage et distribution d’images (ex. *Docker Hub*).
 
-\- \*\*Volume\*\* : espace de stockage persistant pour les données, indépendant du cycle de vie des conteneurs.
+- **Volume** : espace de stockage persistant pour les données, indépendant du cycle de vie des conteneurs.
 
 &nbsp; Types de volumes :
 
-&nbsp; - \*\*Volumes Docker\*\* : gérés par Docker, faciles à partager entre conteneurs.  
+&nbsp; - **Volumes Docker** : gérés par Docker, faciles à partager entre conteneurs.  
 
-&nbsp; - \*\*Bind mounts\*\* : utilisent un dossier du système hôte, pratique pour le développement.
+&nbsp; - **Bind mounts** : utilisent un dossier du système hôte, pratique pour le développement.
 
 
 
-\### 🧩 Avantages
+### 🧩 Avantages
 
-\- Lancement rapide, faible empreinte système.  
+- Lancement rapide, faible empreinte système.  
 
-\- Déploiement cohérent sur tous les environnements.  
+- Déploiement cohérent sur tous les environnements.  
 
-\- Intégration avec un orchestrateur (\*\*Kubernetes\*\*).
+- Intégration avec un orchestrateur (**Kubernetes**).
 
-\- Isolation réseau et sécurité.
+- Isolation réseau et sécurité.
 
 
 
@@ -44,151 +44,151 @@ Elle permet d’exécuter des applications dans des \*\*conteneurs\*\* isolés, 
 
 
 
-\## 🔹 Commandes essentielles
+## 🔹 Commandes essentielles
 
 
 
-\### Images
+### Images
 
 
 
-\# Lister les images
+# Lister les images
 
 ```docker images```
 
 
 
-\# Télécharger une image
+# Télécharger une image
 
-```docker pull <nom\_image>```
-
-
-
-\# Construire une image depuis un Dockerfile
-
-```docker build -t <nom\_image> .```
+```docker pull <nom_image>```
 
 
 
-\# Supprimer une image
+# Construire une image depuis un Dockerfile
 
-```docker rmi <nom\_image>```
-
-
-
-\### Conteneurs
+```docker build -t <nom_image> .```
 
 
 
-\# Lancer un conteneur
+# Supprimer une image
 
-```docker run -d --name <nom\_conteneur> <nom\_image>```
+```docker rmi <nom_image>```
 
 
 
-\# Lister les conteneurs actifs
+### Conteneurs
+
+
+
+# Lancer un conteneur
+
+```docker run -d --name <nom_conteneur> <nom_image>```
+
+
+
+# Lister les conteneurs actifs
 
 ```docker ps```
 
 
 
-\# Lister tous les conteneurs
+# Lister tous les conteneurs
 
 ```docker ps -a```
 
 
 
-\# Arrêter un conteneur
+# Arrêter un conteneur
 
-```docker stop <nom\_conteneur>```
-
-
-
-\# Supprimer un conteneur
-
-```docker rm <nom\_conteneur>```
+```docker stop <nom_conteneur>```
 
 
 
-\# Voir les logs d’un conteneur
+# Supprimer un conteneur
 
-```docker logs <nom\_conteneur>```
-
-
-
-\### Volumes
+```docker rm <nom_conteneur>```
 
 
 
-\# Créer un volume
+# Voir les logs d’un conteneur
 
-```docker volume create <nom\_volume>```
+```docker logs <nom_conteneur>```
 
 
 
-\# Lister les volumes
+### Volumes
+
+
+
+# Créer un volume
+
+```docker volume create <nom_volume>```
+
+
+
+# Lister les volumes
 
 ```docker volume ls```
 
 
 
-\# Supprimer un volume
+# Supprimer un volume
 
-```docker volume rm <nom\_volume>```
-
-
-
-\# Monter un volume lors du lancement d’un conteneur
-
-```docker run -v <nom\_volume>:/chemin/dans/conteneur <nom\_image>```
+```docker volume rm <nom_volume>```
 
 
 
-\### Réseau
+# Monter un volume lors du lancement d’un conteneur
+
+```docker run -v <nom_volume>:/chemin/dans/conteneur <nom_image>```
 
 
 
-\# Lister les réseaux
+### Réseau
+
+
+
+# Lister les réseaux
 
 ```docker network ls```
 
 
 
-\# Créer un réseau
+# Créer un réseau
 
-```docker network create <nom\_reseau>```
-
-
-
-\# Connecter un conteneur à un réseau
-
-```docker network connect <nom\_reseau> <nom\_conteneur>```
+```docker network create <nom_reseau>```
 
 
 
-\### Autres
+# Connecter un conteneur à un réseau
+
+```docker network connect <nom_reseau> <nom_conteneur>```
 
 
 
-\# Lancer un conteneur avec un terminal interactif
-
-```docker run -it <nom\_image> /bin/bash```
+### Autres
 
 
 
-\# Supprimer tous les conteneurs arrêtés
+# Lancer un conteneur avec un terminal interactif
+
+```docker run -it <nom_image> /bin/bash```
+
+
+
+# Supprimer tous les conteneurs arrêtés
 
 ```docker container prune```
 
 
 
-\# Supprimer toutes les images inutilisées
+# Supprimer toutes les images inutilisées
 
 ```docker image prune -a```
 
 
 
-\# Nettoyage complet (supprime aussi les volumes et toutes les images inutilisées)
+# Nettoyage complet (supprime aussi les volumes et toutes les images inutilisées)
 
 ```docker system prune -a --volumes -f```
 
