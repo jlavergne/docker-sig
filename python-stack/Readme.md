@@ -1,10 +1,10 @@
-# 🐳 Application Python (Docker)
+## 🐳 Application Python (Docker)
 
 Ce projet fournit une application Python avec Flask, entièrement containerisée avec Docker Compose, prête pour le développement local.
 
 ---
 
-## 📦 Services
+### 📦 Services
 
 | Service | Description    | Port local | URL                   |
 | ------- | -------------- | ---------- | --------------------- |
@@ -12,7 +12,7 @@ Ce projet fournit une application Python avec Flask, entièrement containerisée
 
 ---
 
-## ▶️ Docker-compose
+### ▶️ Docker-compose
 
 ```bash
 docker-compose up --build -d

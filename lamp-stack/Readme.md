@@ -1,10 +1,10 @@
-# 🐳 Stack LAMP + phpMyAdmin (Docker)
+## 🐳 Stack LAMP + phpMyAdmin (Docker)
 
 Ce projet contient une stack LAMP (Linux, Apache, MySQL, PHP) avec une interface d'administration via phpMyAdmin.
 
 ---
 
-## 📦 Services
+### 📦 Services
 
 | Service        | Description              | Port local | URL                            |
 |----------------|--------------------------|------------|--------------------------------|
@@ -14,7 +14,7 @@ Ce projet contient une stack LAMP (Linux, Apache, MySQL, PHP) avec une interface
 
 ---
 
-## ▶️ Docker-compose
+### ▶️ Docker-compose
 
 ```bash
 docker-compose up --build -d

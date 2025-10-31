@@ -1,10 +1,10 @@
-# 🐳 Projet Django avec PostgreSQL (Docker)
+## 🐳 Projet Django avec PostgreSQL (Docker)
 
 Ce projet fournit une application Django prête pour le développement avec Docker Compose et une base PostgreSQL. Il inclut la création automatique du projet Django, des migrations, et d’un superuser.
 
 ---
 
-## 📦 Services
+### 📦 Services
 
 | Service | Description     | Port local | URL                    |
 | ------- | --------------- | ---------- | ---------------------- |
@@ -13,7 +13,7 @@ Ce projet fournit une application Django prête pour le développement avec Dock
 
 ---
 
-## ▶️ Docker-compose
+### ▶️ Docker-compose
 
 ```bash
 docker-compose up --build -d

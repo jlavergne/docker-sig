@@ -1,10 +1,10 @@
-# 🐳 Application Node.js + Express (Docker)
+## 🐳 Application Node.js + Express (Docker)
 
 Ce projet contient une application Express très simple conteneurisée avec Docker.
 
 ---
 
-## 📦 Services
+### 📦 Services
 
 | Service     | Description        | Port local | URL                        |
 |-------------|--------------------|------------|----------------------------|
@@ -12,7 +12,7 @@ Ce projet contient une application Express très simple conteneurisée avec Dock
 
 ---
 
-## ▶️ Docker-compose
+### ▶️ Docker-compose
 
 ```bash
 docker-compose up --build -d
