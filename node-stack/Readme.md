@@ -12,9 +12,9 @@ Ce projet contient une application Express très simple conteneurisée avec Dock
 
 ---
 
-## ▶️ Lancer le projet
+## ▶️ Docker-compose
 
 ```bash
-docker-compose up --build
+docker-compose up --build -d
 
 docker-compose down

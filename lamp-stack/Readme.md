@@ -14,9 +14,9 @@ Ce projet contient une stack LAMP (Linux, Apache, MySQL, PHP) avec une interface
 
 ---
 
-## ▶️ Lancer le projet
+## ▶️ Docker-compose
 
 ```bash
-docker-compose up --build
+docker-compose up --build -d
 
 docker-compose down

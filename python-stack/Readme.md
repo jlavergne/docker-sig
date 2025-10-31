@@ -12,9 +12,9 @@ Ce projet fournit une application Python avec Flask, entièrement containerisée
 
 ---
 
-## ▶️ Lancer le projet
+## ▶️ Docker-compose
 
 ```bash
-docker-compose up --build
+docker-compose up --build -d
 
 docker-compose down

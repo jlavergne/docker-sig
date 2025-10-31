@@ -13,9 +13,9 @@ Ce projet fournit une application Django prête pour le développement avec Dock
 
 ---
 
-## ▶️ Lancer le projet
+## ▶️ Docker-compose
 
 ```bash
-docker-compose up --build
+docker-compose up --build -d
 
 docker-compose down
