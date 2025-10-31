@@ -52,25 +52,25 @@ Elle permet d’exécuter des applications dans des **conteneurs* isolés, porta
 
 
 
-# Lister les images
+- Lister les images
 
 ```docker images```
 
 
 
-# Télécharger une image
+- Télécharger une image
 
 ```docker pull <nom_image>```
 
 
 
-# Construire une image depuis un Dockerfile
+- Construire une image depuis un Dockerfile
 
 ```docker build -t <nom_image> .```
 
 
 
-# Supprimer une image
+- Supprimer une image
 
 ```docker rmi <nom_image>```
 
@@ -80,37 +80,37 @@ Elle permet d’exécuter des applications dans des **conteneurs* isolés, porta
 
 
 
-# Lancer un conteneur
+- Lancer un conteneur
 
 ```docker run -d --name <nom_conteneur> <nom_image>```
 
 
 
-# Lister les conteneurs actifs
+- Lister les conteneurs actifs
 
 ```docker ps```
 
 
 
-# Lister tous les conteneurs
+- Lister tous les conteneurs
 
 ```docker ps -a```
 
 
 
-# Arrêter un conteneur
+- Arrêter un conteneur
 
 ```docker stop <nom_conteneur>```
 
 
 
-# Supprimer un conteneur
+- Supprimer un conteneur
 
 ```docker rm <nom_conteneur>```
 
 
 
-# Voir les logs d’un conteneur
+- Voir les logs d’un conteneur
 
 ```docker logs <nom_conteneur>```
 
@@ -120,25 +120,25 @@ Elle permet d’exécuter des applications dans des **conteneurs* isolés, porta
 
 
 
-# Créer un volume
+- Créer un volume
 
 ```docker volume create <nom_volume>```
 
 
 
-# Lister les volumes
+- Lister les volumes
 
 ```docker volume ls```
 
 
 
-# Supprimer un volume
+- Supprimer un volume
 
 ```docker volume rm <nom_volume>```
 
 
 
-# Monter un volume lors du lancement d’un conteneur
+- Monter un volume lors du lancement d’un conteneur
 
 ```docker run -v <nom_volume>:/chemin/dans/conteneur <nom_image>```
 
@@ -148,19 +148,19 @@ Elle permet d’exécuter des applications dans des **conteneurs* isolés, porta
 
 
 
-# Lister les réseaux
+- Lister les réseaux
 
 ```docker network ls```
 
 
 
-# Créer un réseau
+- Créer un réseau
 
 ```docker network create <nom_reseau>```
 
 
 
-# Connecter un conteneur à un réseau
+- Connecter un conteneur à un réseau
 
 ```docker network connect <nom_reseau> <nom_conteneur>```
 
@@ -170,25 +170,25 @@ Elle permet d’exécuter des applications dans des **conteneurs* isolés, porta
 
 
 
-# Lancer un conteneur avec un terminal interactif
+- Lancer un conteneur avec un terminal interactif
 
 ```docker run -it <nom_image> /bin/bash```
 
 
 
-# Supprimer tous les conteneurs arrêtés
+- Supprimer tous les conteneurs arrêtés
 
 ```docker container prune```
 
 
 
-# Supprimer toutes les images inutilisées
+- Supprimer toutes les images inutilisées
 
 ```docker image prune -a```
 
 
 
-# Nettoyage complet (supprime aussi les volumes et toutes les images inutilisées)
+- Nettoyage complet (supprime aussi les volumes et toutes les images inutilisées)
 
 ```docker system prune -a --volumes -f```
 

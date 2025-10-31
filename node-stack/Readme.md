@@ -16,3 +16,5 @@ Ce projet contient une application Express très simple conteneurisée avec Dock
 
 ```bash
 docker-compose up --build
+
+docker-compose down

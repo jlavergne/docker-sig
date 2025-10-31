@@ -17,3 +17,5 @@ Ce projet fournit une application Django prête pour le développement avec Dock
 
 ```bash
 docker-compose up --build
+
+docker-compose down
